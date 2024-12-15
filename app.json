@@ -1,0 +1,22 @@
+{
+  "name": "Telegram User Finder",
+  "description": "A tool to find Telegram user phone numbers using their IDs",
+  "repository": "https://github.com/swagkarna/Telegram_User_Number_Finder",
+  "env": {
+    "API_ID": {
+      "description": "Your Telegram API ID",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Your Telegram API Hash",
+      "required": true
+    },
+    "PHONE_NUMBER": {
+      "description": "Your Telegram phone number",
+      "required": true
+    }
+  },
+  "scripts": {
+    "postdeploy": "python finder.py"
+  }
+}
